@@ -40,8 +40,15 @@ const app = createApp({
     },
     methods: {
         createTask(){
-            tasks.push(this.newTask);
+            const newCopy = {...this.newTask};
+            this.tasks.push(newCopy);
+        },
+        deleteTask(i){
+            this.tasks.splice(i, 1);
         }
+    },
+    mounted(){
+
     },
    
 });
