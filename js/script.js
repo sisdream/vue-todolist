@@ -45,7 +45,13 @@ const app = createApp({
         },
         deleteTask(i){
             this.tasks.splice(i, 1);
-        }
+        },
+        setTask(i){
+            this.tasks[i].done = true;
+        },
+        setTaskRot(i){
+            this.tasks[i].done = false;
+        },
     },
     mounted(){
 
