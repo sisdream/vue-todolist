@@ -5,7 +5,11 @@
 }
 
 .task{
-    background-color: #e6d3bb;
+    background-color: #cbc3b8;
     display: flex;
     justify-content: space-between;
+}
+
+i{
+    cursor: pointer;
 }
