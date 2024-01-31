@@ -30,19 +30,20 @@ const app = createApp({
                     name: "Task 6",
                     done: false,
                 },
-                
             ],
-           
+
+            newTask:{
+                name: "",
+                done: false
+            } 
         };
     },
-    methods:{
-        printHello(){
-            console.log("hello vue");
-        },
+    methods: {
+        createTask(){
+            tasks.push(this.newTask);
+        }
     },
-    mounted(){
-        this.printHello();
-    },
+   
 });
 
 app.mount('#app');

@@ -14,8 +14,8 @@
         <div class="container mt-5">
             <h1 class="mb-5 text-center">{{ title }}</h1>
             <h2 class="mb-3">Crea nuove Task</h2>
-            <input type="text" class="form-control mb-3" id="new-task">
-            <button class="btn btn-success mb-3">Salva <i class="fa-regular fa-floppy-disk"></i></button>
+            <input v-model="newTask.name" type="text" class="form-control mb-3" id="new-task">
+            <button @click="createTask" class="btn btn-success mb-3">Salva <i class="fa-regular fa-floppy-disk"></i></button>
             <div class="row">
                 <div class="col-4">
                     <h3>Task da eseguire</h3>
