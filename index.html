@@ -20,7 +20,7 @@
                 <div class="col-4">
                     <h3>Task da eseguire</h3>
                     <ul class="p-0">
-                        <li v-for="task in tasks" class="task p-3 mb-3" v-if="">
+                        <li v-for="task in tasks" class="task p-3 mb-3" v-show="task.done == false">
                             <div>{{ task.name }} </div>
                             <div class="action">
                                 <i class="fa-solid fa-check text-success ms-3"></i>
@@ -32,8 +32,8 @@
                 <div class="col-4">
                     <h3>Task eseguite</h3>
                     <ul class="p-0">
-                        <li class="task p-3 mb-3">
-                            <div>Task 1</div>
+                        <li  v-for="task in tasks" class="task p-3 mb-3"  v-show="task.done">
+                            <div>{{ task.name }}</div>
                             <div class="action">
                                 <i class="fa-solid fa-arrows-rotate text-warning ms-3"></i>
                                 <i class="fa-solid fa-xmark text-danger ms-3"></i>
