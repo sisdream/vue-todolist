@@ -20,33 +20,11 @@
                 <div class="col-4">
                     <h3>Task da eseguire</h3>
                     <ul class="p-0">
-                        <li class="task p-3 mb-3">
-                            <div>Task 1 </div>
+                        <li v-for="task in tasks" class="task p-3 mb-3" v-if="">
+                            <div>{{ task.name }} </div>
                             <div class="action">
                                 <i class="fa-solid fa-check text-success ms-3"></i>
                                 <i class="fa-solid fa-xmark text-danger ms-3"></i>
-                            </div>
-                        </li>
-                        <li class="task p-3 mb-3">
-                            <div>Task 2 </div>
-                            <div class="action">
-                                <i class="fa-solid fa-check text-success ms-3"></i>
-                                <i class="fa-solid fa-xmark text-danger ms-3"></i>
-                            </div>
-                        </li>
-                        <li class="task p-3 mb-3">
-                            <div>Task 3 </div>
-                            <div class="action">
-                                <i class="fa-solid fa-check text-success ms-3"></i>
-                                <i class="fa-solid fa-xmark text-danger ms-3"></i>
-                            </div>
-                        </li>
-                        <li class="task p-3 mb-3">
-                            <div>Task 4 </div>
-                            <div class="action">
-                                <i class="fa-solid fa-check text-success ms-3"></i>
-                                <i class="fa-solid fa-xmark text-danger ms-3"></i>
-                                <i class=""></i>
                             </div>
                         </li>
                     </ul>

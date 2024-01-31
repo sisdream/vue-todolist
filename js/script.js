@@ -22,6 +22,14 @@ const app = createApp({
                     name: "Task 4",
                     done: false,
                 },
+                {
+                    name: "Task 5",
+                    done: true,
+                },
+                {
+                    name: "Task 6",
+                    done: false,
+                },
                 
             ],
            
